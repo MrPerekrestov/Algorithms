@@ -14,7 +14,7 @@ namespace Algorithms
             //BinarySearchTest();
             //HexaDecimalTest();
             // MaxHeapTest();
-            Console.WriteLine("Hello world");
+           
             IQuaribleTest();
             Console.ReadKey();
         }
