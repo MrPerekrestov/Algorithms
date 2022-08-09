@@ -9,7 +9,7 @@ pipeline {
     stage('print message') {
       steps {
         echo 'test'
-        sh 'cd d:\\jenkins'
+        bat 'cd d:\\jenkins'
       }
     }
 
