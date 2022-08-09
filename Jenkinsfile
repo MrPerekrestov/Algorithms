@@ -19,7 +19,7 @@ pipeline {
     stage('build') {
       steps {
         dir(path: 'd:\\jenkins') {
-          bat 'donet restore'
+          bat 'dotnet restore'
           bat 'dotnet build'
         }
 
