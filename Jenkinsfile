@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('print message') {
       steps {
-        echo 'test'
-        bat 'cd d:\\jenkins'
+        echo 'Starting build'
+        dir(path: 'd:\\jenkins')
       }
     }
 
