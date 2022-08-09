@@ -4,7 +4,7 @@ pipeline {
     stage('print message') {
       steps {
         echo 'test'
-        bat 'cd d:\\jenkins'
+        sh 'cd d:\\jenkins'
       }
     }
 
