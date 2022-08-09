@@ -9,8 +9,10 @@ pipeline {
     stage('git clone') {
       steps {
         echo 'Starting build'
-        dir(path: 'd:\\jenkins')
-        bat 'git clone git@github.com:MrPerekrestov/Algorithms.git'
+        dir(path: 'd:\\jenkins') {
+          bat 'git clone git@github.com:MrPerekrestov/Algorithms.git'
+        }
+
       }
     }
 
