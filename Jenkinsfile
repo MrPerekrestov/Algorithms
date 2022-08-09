@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'Starting build'
         dir(path: 'd:\\jenkins') {
-          bat 'git clone git@github.com:MrPerekrestov/Algorithms.git'
+          git 'https://github.com/MrPerekrestov/Algorithms.git'
         }
 
       }
