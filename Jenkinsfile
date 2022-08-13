@@ -18,7 +18,10 @@ pipeline {
 
     stage('tests') {
       steps {
-        nunit()
+        dir(path: 'd:\\jenkins') {
+          bat 'dotnet test d:\\jenkins\\Algorithms.sln --logger "junit;LogFilePath=test_results.xml"'
+        }
+
       }
     }
 
