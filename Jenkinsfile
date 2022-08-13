@@ -19,9 +19,10 @@ pipeline {
     stage('tests') {
       steps {
         dir(path: 'd:\\jenkins') {
-          bat 'dotnet test d:\\jenkins\\Algorithms.sln --logger "junit;LogFilePath=test_results.xml"'
+          bat 'dotnet test d:\\jenkins\\Algorithms.sln --logger "junit;LogFilePath=d:\\jenkins\\test_results\\test_results.xml"'
         }
 
+        archiveArtifacts 'd:\\jenkins\\test_results'
       }
     }
 
