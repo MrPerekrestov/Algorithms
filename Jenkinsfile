@@ -6,16 +6,6 @@ pipeline {
 
   }
   stages {
-    stage('git clone') {
-      steps {
-        echo 'Starting build'
-        dir(path: 'd:\\jenkins') {
-          git 'https://github.com/MrPerekrestov/Algorithms.git'
-        }
-
-      }
-    }
-
     stage('build') {
       steps {
         dir(path: 'd:\\jenkins') {
